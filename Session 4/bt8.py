@@ -1,9 +1,12 @@
 import datetime
-now = datetime.datetime.now()
-print (now.hour)
+import pyglet
 while True:
-    if now.hour == 16:
-        print("wakeup")
+    now = datetime.datetime.now()
+    print(now)
+    if now.second == 16:
+        music = pyglet.resource.media("Con-Trai-Cung-K-ICM-B-Ray.mp3")
+        music.play()
+        pyglet.app.run()
         break
     else:
         print("...")

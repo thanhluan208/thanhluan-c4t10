@@ -11,7 +11,9 @@ while True:
         if b > 8:
             print("vuilongnhaplai")
         else:
-            if a == a.lower() or a == a.upper():
+            if a == a.lower():
+                print("vuilongnhaplai")
+            elif a == a.upper():
                 print("vuilongnhaplai")
             else:
                 print(a)
