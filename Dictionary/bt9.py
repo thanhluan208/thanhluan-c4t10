@@ -38,7 +38,3 @@ i = {
     "Hour" : 14,
     "Salary per Hour ($)" : 0.7
 }
-if g == "don":
-    print(h)
-elif g == "h.duc":
-    print(i)

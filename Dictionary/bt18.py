@@ -14,9 +14,7 @@ c = {
     "Nhân vật tham gia" : "98765",
 }
 d = [a, b, c]
-for x in d:
-    g = input("Hãng sản xuất:")
-    h = input("Quốc gia")
-    x["Hãng sản xuất"] = (g)
-    x["Quốc gia"] = (h)
+for i in d:
+    h = input("nhập tên diễn viên mới:")
+    i["diễn viên"] = (h)
 print(d)
