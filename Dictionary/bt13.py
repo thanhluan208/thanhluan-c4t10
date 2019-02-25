@@ -19,3 +19,4 @@ d = {
 }
 b = [a, c, d]
 b.pop(2)
+print(b)

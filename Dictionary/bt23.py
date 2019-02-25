@@ -26,3 +26,4 @@ question = [
     },
 
 ]
+print(question)
