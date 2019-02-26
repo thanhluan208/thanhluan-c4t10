@@ -3,19 +3,26 @@ z = int(input("chiều dài của map"))
 o = int(input("chiều rộng của map"))
 while True:
     end = {
-        "m" : randint(0, z),
-        "n" : randint(0, o)
+        "m" : randint(0, o-1),
+        "n" : randint(0, z-1)
     }
     key = {
-        "h" : randint(0, z),
-        "g" : randint(0, o),
+        "h" : randint(0, o-1),
+        "g" : randint(0, z-1),
     }
     player = {
-        "x" : randint(0, z),
-        "y" : randint(0, o),
+        "x" : randint(0, o-1),
+        "y" : randint(0, z-1),
         "key" : 0
     }
-    if end["m"] != key["h"] and end["m"] != player["x"] and end["n"] != key["g"] and end["n"] != player["y"]:
+    if end["m"] != key["h"] and end["m"] != player["x"] and player ["x"] != key["h"]:
+        print(end["m"])
+        print(end["n"])
+
+        print(key["h"])
+        print(key["g"])
+        print(player["y"])
+        print(player["x"])
         break
 
 while True:
@@ -23,7 +30,6 @@ while True:
     for y in range(z):
         for x in range (o):
             if x == player["x"] and y == player["y"]:
-
                 print("P", end="")
             elif x == key["h"] and y == key["g"]:
                   print("K", end="")
@@ -57,3 +63,7 @@ while True:
         break
     if player["x"] == end["m"] and player["y"] == end["n"] and player["key"] == 0 :
         print("Chưa có key","hãy đi tìm key")
+    if player["x"] == key["h"]:
+        print("bạn đã đến đúng cột có key")
+    if player["y"] == key["g"]:
+        print("bạn đã đến hàng chứa key")
