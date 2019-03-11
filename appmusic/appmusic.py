@@ -32,15 +32,15 @@ ydl_opts = {
 
 print("Hello this is TK music app")
 iid = []
+display_id= []
 durations = []
 duration = []
 creators = []
 creator = []
+webpage_url = []
 songgs = []
-idd = []
-hhh = []
 songs = []
-detail = {}
+
 while True:
     aa = ["Show All Song", "Show detail of a song", "Play a song","Search and download songs","Exit"]
     for i, d in enumerate(aa):
@@ -61,22 +61,22 @@ while True:
             p = a[e]
             duration.append(p["duration"])
             creator.append(p["creator"])
-            idd.append(p["display_id"])
+            display_id.append(p["display_id"])
             songs.append(p["title"])
         for g in range(0,5):
             h = a[g]
-            hhh.append(h["webpage_url"])
+            webpage_url.append(h["webpage_url"])
         # for xx,zz in enumerate(hhh):
         #     print(xx,zz)
         for x,z in enumerate(songs):
             print(x,z)
         quest = int(input("pick one number to download"))
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            ydl.download([hhh[quest]])
+            ydl.download([webpage_url[quest]])
         quest1 = input("Do you want to play now?")
         if quest1 == "yes":
             # đoạn này bị lỗi
-            sumss = songs[quest]+ "-" +  idd[quest] + ".mp3"
+            sumss = songs[quest]+ "-" +  display_id[quest] + ".mp3"
             source = pyglet.load(sumss)
             player = Player()
             player.queue(source)
@@ -95,7 +95,7 @@ while True:
         else:
             durations.append(duration[quest])
             creators.append(creator[quest])
-            iid.append(idd[quest])
+            iid.append(display_id[quest])
             songgs.append(songs[quest])
     if b == 1:
         if songgs == []:
@@ -109,7 +109,7 @@ while True:
             for xx, yy in enumerate(songgs):
                 print(xx,yy)
             xy = int(input("pick one number to play:"))
-            sumss = songgs[quest]+ "-" +  idd[quest] + ".mp3"
+            sumss = songgs[quest]+ "-" +  display_id[quest] + ".mp3"
             music = pyglet.resource.media(sumss)
             music.play()
             pyglet.app.run()
@@ -117,7 +117,7 @@ while True:
         for xx,yy in enumerate(songgs):
             print(xx,yy)
         yx = int(input("pick one number to show detail"))
-        print("ID:",*idd)
+        print("ID:",*display_id)
         print("TITLE:", *songgs)
         print("DURATION:", *durations)
         print("Creator:", *creators )
