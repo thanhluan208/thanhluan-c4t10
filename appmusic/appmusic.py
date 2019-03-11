@@ -41,10 +41,6 @@ idd = []
 hhh = []
 songs = []
 detail = {}
-aa = ["Show All Song", "Show detail of a song", "Play a song","Search and download songs","Exit"]
-for i, d in enumerate(aa):
-    print(i + 1,d)
-b = int(input("Pick one of these number:"))
 while True:
     aa = ["Show All Song", "Show detail of a song", "Play a song","Search and download songs","Exit"]
     for i, d in enumerate(aa):
