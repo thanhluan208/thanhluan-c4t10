@@ -79,13 +79,12 @@ while True:
             ydl.download([hhh[quest]])
         quest1 = input("Do you want to play now?")
         if quest1 == "yes":
+            # đoạn này bị lỗi
             sumss = songs[quest]+ "-" +  idd[quest] + ".mp3"
             source = pyglet.load(sumss)
             player = Player()
             player.queue(source)
             player.play()
-            # music = pyglet.resource.media(sumss)
-            # music.play()
             disc = "on"
             while disc == "on":
                 quest2 = input("choose pause, continue, stop:")
