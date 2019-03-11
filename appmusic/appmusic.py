@@ -77,26 +77,26 @@ while True:
         if quest1 == "yes":
             # đoạn này bị lỗi
             sumss = songs[quest]+ "-" +  display_id[quest] + ".mp3"
-            source = pyglet.load(sumss)
-            player = Player()
+            source = pyglet.media.load(sumss)
+            player = pyglet.media.Player()
             player.queue(source)
             player.play()
-            disc = "on"
-            while disc == "on":
+            # disc = "on"
+            while True:
                 quest2 = input("choose pause, continue, stop:")
                 if quest2 == "pause":
-                    player.stop()
+                    player.pause()
                 elif quest2 == "stop":
                     player.delete()
                     break
                 elif quest2 == "continue":
                     player.play()
-            pyglet.app.run()
-        else:
-            durations.append(duration[quest])
-            creators.append(creator[quest])
-            iid.append(display_id[quest])
-            songgs.append(songs[quest])
+            # pyglet.app.run()
+        
+        durations.append(duration[quest])
+        creators.append(creator[quest])
+        iid.append(display_id[quest])
+        songgs.append(songs[quest])
     if b == 1:
         if songgs == []:
             print("song list is empty")
