@@ -17,7 +17,9 @@ table.addEventListener('click',function(e){
 
 var mirror = document.getElementById("mirror");
 mirror.addEventListener('click',function(e){
-    console.log("hello");
+    back.style.display = "block";
+    background.setAttribute('class',"scaleMirror");
+    backButton();
 });
 var drawers = document.getElementById("drawers");
 drawers.addEventListener('click',function(e){
