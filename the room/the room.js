@@ -37,3 +37,11 @@ function backButton() {
         back.style.display = "none";
     })
 }
+var paper = document.getElementById("papers");
+paper.addEventListener('click',function(e){
+    console.log("paper");
+})
+var box = document.getElementById("box");
+box.addEventListener("click",function(e){
+    console.log("box");
+})
