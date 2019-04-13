@@ -24,11 +24,12 @@ body{
     position: absolute;
     width: 15px;
     height: 15px;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     top: 50%;
     left: 50%;
     transform: translate(-109px, -57px) !important;
 }
+
 #bottle {
     position: absolute;
     width: 13px;
@@ -38,6 +39,7 @@ body{
     left: 50%;
     transform: translate(-43px, -44px) !important;
 }
+
 #table {
     position: absolute;
     width: 100px;
@@ -47,7 +49,8 @@ body{
     left: 30%;
     transform: translate(5px,20px)
 } 
-#mirror{
+
+#mirror {
     position: absolute;
     width: 200px;
     height: 400px;
@@ -56,7 +59,8 @@ body{
     transform: translate(5px,40px);
     /* background-color: red;  */
 }
-#drawers{
+
+#drawers {
     position: absolute;
     width: 130px;
     height: 50px;
@@ -65,7 +69,8 @@ body{
     /* background-color: blue;  */
     transform: translate(30px,15px)
 }
-#door{
+
+#door {
     position: absolute;
     width: 120px;
     height: 250px;
@@ -74,7 +79,8 @@ body{
     /* background-color: aqua;  */
     transform: translate(70px,125px)
 }
-#papers{
+
+#papers {
     position: absolute;
     width: 240px;
     height: 50px;
@@ -83,7 +89,15 @@ body{
     transform: translate(119px,104px);
     /* background-color: green; */
 }
-#box{
+
+#newspaper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -91,4 +105,50 @@ body{
     left: 10%;
     transform: translate(82px,100px);
     /* background-color: red */
+}
+
+#match {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#messagebottle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: red;
+    font-family: montserrat;
+}
+
+#safelock {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: red;
+    font-family: montserrat;
+    font-size: 200%;
+}
+#candle {
+    position: absolute;
+    width: 8px;
+    height: 32px;
+    /* background-color: black; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-23px, -44px) !important;
+}
+#broken_glass {
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    /* background-color: black; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-10px, -31px) !important;
 }
