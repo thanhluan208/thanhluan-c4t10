@@ -20,7 +20,7 @@ a
     text-decoration: none;
     font-family: sans-serif;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #03a9f4, red, blue, green);
+    background: linear-gradient(90deg, #03a9f4, red, blue, green, black, pink, orange, yellow, white);
     background-size: 400%;
     border-radius: 30px;
     z-index: 1;
@@ -53,11 +53,11 @@ a:before
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
-    filter: blur(20px)
+    filter: blur(50px)
 }
 a:hover:before
 {
-    filter: blur(20px);
+    filter: blur(50px);
     opacity: 1;
     animation: animate 8s linear infinite;
 }
