@@ -49,7 +49,7 @@ a:before
     right: -5px;
     bottom: -5px;
     z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, red, blue, green);
+    background: linear-gradient(90deg, #03a9f4, red, blue, green, black, pink, orange, yellow, white);
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
