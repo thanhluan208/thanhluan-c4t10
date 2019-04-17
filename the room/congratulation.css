@@ -1,0 +1,79 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Bad Script', cursive;
+    background: black;
+}
+h1
+{
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-size: 8em;
+}
+h1 span
+{
+    display: table-cell;
+    animation: animate 1s linear infinite;
+}
+h1 span:nth-child(9n + 1)
+{
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(9n + 2)
+{
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(9n + 3)
+{
+    animation-delay: 2.35s;
+}
+h1 span:nth-child(9n + 4)
+{
+    animation-delay: 2.75s;
+}
+h1 span:nth-child(9n + 5)
+{
+    animation-delay: 1s;
+}
+h1 span:nth-child(9n + 6)
+{
+    animation-delay: 1.35s;
+}
+h1 span:nth-child(9n + 7)
+{
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(9n + 8)
+{
+    animation-delay: 1.75s;
+}
+h1 span:nth-child(9n + 9)
+{
+    animation-delay: 2s;
+}
+@keyframes animate
+{
+    0%, 100% 
+    {
+        color:#fff;
+        filter: blur(2px);
+        text-shadow:0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 60px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 140px #00b3ff,
+                    0 0 160px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 220px #00b3ff,
+                    0 0 250px #00b3ff,
+                    0 0 3000px #00b3ff;    
+    }
+}

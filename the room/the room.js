@@ -14,7 +14,7 @@ table.addEventListener('click',function(e){
         <div id = "broken_glass"></div>
     `;
     background.insertAdjacentHTML('afterbegin', addHtml);
-    console.log(getElementById("broken_glass"))
+    console.log(document.getElementById("broken_glass"))
     var bottle = document.getElementById("bottle");
     bottle.addEventListener('click', function (e) {
         addHtml = `
@@ -63,7 +63,7 @@ drawers.addEventListener('click',function(e){
         var confirmPassword = "68911111";
         var password = document.getElementById("pscd").value;
         if (password == confirmPassword) {
-            window.location="welcome.html";
+            window.location="congratulation.html";
         }
         else {
             alert("Wrong passcode.");
@@ -109,6 +109,7 @@ function backButton1() {
         back.style.display = "none";
         bottle.remove();
         messagebottle.remove();
+        broken_glass.remove();
     })
 }
 
