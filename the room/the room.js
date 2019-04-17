@@ -14,7 +14,8 @@ table.addEventListener('click',function(e){
         <div id = "broken_glass"></div>
     `;
     background.insertAdjacentHTML('afterbegin', addHtml);
-    console.log(document.getElementById("broken_glass"))
+    console.log(document.getElementById("broken_glass"));
+    console.log(document.getElementById("candle"));
     var bottle = document.getElementById("bottle");
     bottle.addEventListener('click', function (e) {
         addHtml = `
@@ -27,14 +28,13 @@ table.addEventListener('click',function(e){
             messagebottle.remove();
         });
     var candle = document.getElementById("candle");
-    console.log(candle)
     candle.addEventListener('click',function(e){
-        alert("hello world");
+        console.log("hello world");
     });
     var broken_glass = document.getElementById("broken_glass");
     broken_glass.addEventListener('click',function(e){
-        alert("hello world")
-    })
+        console.log("hello world");
+    });
 
     });
     backButton1();
